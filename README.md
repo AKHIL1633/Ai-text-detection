@@ -34,3 +34,11 @@ python xgboost_classifier.py
 # For Hybrid Model
 cd Hybrid_LSTM_CNN
 python training_script.py
+
+
+| Model           | Accuracy | Precision | Recall | F1-Score | Notes                       |
+| --------------- | -------- | --------- | ------ | -------- | --------------------------- |
+| BERT + XGBoost  | 96.4%    | 0.95      | 0.96   | 0.96     | Strong baseline             |
+| Hybrid LSTM+CNN | 98.6%    | 0.98      | 0.99   | 0.98     | Best generalization overall |
+
+
