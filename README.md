@@ -46,9 +46,7 @@ This project detects whether a given text is AI-generated or human-written using
 4. Run the application
    streamlit run app.py
 
-## Demo
 
-(Add your Streamlit or deployed link here)
 
 ## Future Improvements
 
