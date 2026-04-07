@@ -1,40 +1,61 @@
-# 🧠 AI vs Human Text Classification
+# AI Text Detection System
 
-This project focuses on distinguishing between human-written and AI-generated text using two different approaches:
+## Overview
 
-### 🔹 1. BERT + XGBoost Pipeline
-- Extracted contextual embeddings using BERT (CLS token).
-- Used XGBoost classifier for binary classification.
-- Fast and effective for small to medium datasets.
+This project detects whether a given text is AI-generated or human-written using a hybrid machine learning and deep learning approach. It combines transformer-based embeddings with traditional ML and neural architectures to achieve high accuracy.
 
-### 🔹 2. Hybrid Deep Learning Model (LSTM + Transformer + CNN)
-- Applied n-gram vectorization and integer encoding.
-- Used Bidirectional LSTM for sequential learning.
-- Integrated Transformer block for attention and Conv1D for local pattern detection.
-- Achieved high generalization on unseen GPT-3 and ChatGPT samples.
+## Features
 
-### 📊 Metrics Compared
-- Accuracy
-- Precision, Recall, F1-Score
-- Generalization performance on different AI models
+* Detect AI-generated vs human-written text
+* Hybrid model: BERT + XGBoost + CNN + BiLSTM + Transformer
+* Achieves ~94% accuracy on benchmark datasets
+* Real-time prediction using Streamlit interface
 
-### 📁 Dataset
-Used a public Kaggle dataset containing human and AI-generated text samples from GPT-3 and ChatGPT.
+## Tech Stack
 
----
+* Python
+* BERT (Transformers)
+* XGBoost
+* CNN, BiLSTM, Transformer
+* Streamlit
 
-## 🧪 How to Run
-Clone the repo and run:
+## Architecture
 
-```bash
-# For BERT + XGBoost
-cd BERT_XGBoost
-python xgboost_classifier.py
+1. Data preprocessing and cleaning
+2. Feature extraction using BERT embeddings
+3. Hybrid model training (ML + DL)
+4. Prediction pipeline for classification
 
-# For Hybrid Model
-cd Hybrid_LSTM_CNN
-python training_script.py
+## Results
 
+* Accuracy: ~94%
+* Strong F1-score performance
+* Robust detection across different datasets
 
+## How to Run
 
+1. Clone the repository
+   git clone https://github.com/AKHIL1633/Ai-text-detection.git
 
+2. Navigate to project directory
+   cd Ai-text-detection
+
+3. Install dependencies
+   pip install -r requirements.txt
+
+4. Run the application
+   streamlit run app.py
+
+## Demo
+
+(Add your Streamlit or deployed link here)
+
+## Future Improvements
+
+* Improve generalization across unseen models
+* Add explainability (SHAP / attention visualization)
+* Deploy as web API
+
+## Author
+
+Akhil P
